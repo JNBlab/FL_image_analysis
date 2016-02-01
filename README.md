@@ -9,7 +9,7 @@ Tools for processing still images from videos taken through the internal camera 
 	
 	•	Monochrome masking of the image
 	
-	•	Determination of region of interest
+	•	Determination of region of interest (ROI)
 	
 	•	Export of pixel intensity histograms
 	
@@ -17,3 +17,30 @@ Tools for processing still images from videos taken through the internal camera 
 
 3.	Calculation of objective fluorescence intensity bin and fractional fluorescence intensity based on biopsy ROI and field histograms, and export of integrated data file.
 
+###Extraction of monochrome pixel intensities###
+We perform these operations using commercial software (Adobe Photoshop).  No additional setup required. Other programs or home-written software may be substituted if they provide monochrome masking, in order that the green channel be isolated, and export of pixel intensities in user-defined ROIs. We provide a detailed protocol (/FL_ImageExport_PROTOCOL.pdf), two example image files, and two directories of example output data from this process (/ExampleFiles/).
+
+###Calculation of quantitative fluorescence intensity value of biopsy ROI based on biopsy FIELD###
+
+FL_rundirectory.py, FL_biopsy.py, and FL_image.py are programs written by J. Sims in Python2.7.5.  They require the following modules (standard installation):  sys, string, numpy, os, argparse.
+
+In addition to these programs, the following files are expected as input:
+
+Biopsy Data -- a tab-delimited text file with biopsy sample names in Col0, Raw fluorescence intesnity values (mean or median intensity of ROI histogram) in Col1, and other non-imaging data in other columns (variable number accomodated, headers required).  See example file "BiopsyData.txt"
+
+FIELD histogram files -- a tab-delimited text file containing Col0 = [0:255], Col1 = number of pixels of intensity value. This can be manually or automatically generated from the "FIELD.csv" histograms output during step 1.  See example files:
+```	FL16-T1-MF.tsv
+	FL16-T2-HF.tsv
+	FL16-T3-NF.tsv
+	FL19-T2-MF.tsv
+	FL20-T1-HF.tsv
+	FL23-T2-NF.tsv
+	FL23-T4-MF.tsv
+	FL27-T1-NF.tsv
+	FL27-T2-LF.tsv
+	FL45-T1-HF.tsv
+	FL45-T2-NF.tsv
+	FL45-T3-NF.tsv
+	FL67-T2-NF.tsv
+```
+These filenames must begin with the same patient/timepoint identifier as the biopsy names listed in the Biopsy Data file.
