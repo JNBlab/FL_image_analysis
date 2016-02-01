@@ -1,0 +1,12 @@
+Biopsy_ID	Raw_Intensities	Subjective_Call	Objective_Call	Presentation_Type	Pathology_dx	MR_dx	Time	CellCt
+FL16-T1	30.61121	med	low	GBM	tumor	NE	155	121
+FL16-T2	95.133305	high	med	GBM	nec	CE	160	79
+FL19-T2	7.995879	med	low	GBM	infilt	UD_NEC	179	40
+FL20-T1	189.98737	high	high	GBM	tumor	CE	110	166
+FL23-T2	2.109109	none	none	GBM	infilt	NE	107	86
+FL23-T4	15.918544	med	none	GBM	tumor	CE	112	112
+FL27-T1	1.18	none	none	GBM	normal	NE	225	46
+FL27-T2	8.43152	low	med	GBM	tumor	CE	195	266
+FL45-T1	172.754153	high	high	GBM	tumor	CE	100	82
+FL45-T2	10.307692	none	low	GBM	infilt	NE	102	38
+FL45-T3	11.683027	none	low	GBM	infilt	CE	103	28
