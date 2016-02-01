@@ -53,3 +53,4 @@ This compares biopsies listed in Col0 of BiopsyData.txt to their corresponding f
 ```
 python FL_rundirectory.py -h
 ```
+Example files included in directories.
