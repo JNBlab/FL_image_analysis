@@ -44,3 +44,12 @@ FIELD histogram files -- a tab-delimited text file containing Col0 = [0:255], Co
 	FL67-T2-NF.tsv
 ```
 These filenames must begin with the same patient/timepoint identifier as the biopsy names listed in the Biopsy Data file.
+
+To run the image and biopsy analysis pipeline on all these files, run the following command from a directory which contains 1) the three python programs, 2) the *.tsv files (above) and 3) BiopsyData.txt:
+```
+python FL_rundirectory.py BiopsyData.txt -t tsv
+```
+This compares biopsies listed in Col0 of BiopsyData.txt to their corresponding files in the present directory.  For more details on usage, file specification, and analysis options, see the help documentation:
+```
+python FL_rundirectory.py -h
+```
