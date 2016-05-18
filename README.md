@@ -1,3 +1,6 @@
+###WHEN USING THIS SOFTWARE PACKAGE, PLEASE REFERENCE:###
+Neira JA, Ung TH, Sims JS, Malone HR, Chow DS, Samanamud JL, Zanazzi GJ, Guo X, Bowden SG, Zhao B, Sheth SA, McKhann II GM, Sisti MB, Canoll P, D’Amico RS, and Bruce JN. Intraoperative fluorescein guidance facilitates aggressive resection at the infiltrative margins of glioblastoma. 2016. J Neurosurg (in revision).
+
 # FL_image_analysis
 Tools for processing still images from videos taken through the internal camera of a surgical microscope, recording full-spectrum (non-filter) images illuminated dually by white light and fluorescence excitation in which the monochrome intensity of particular region of interest is to be quantified in the context of the intensity of the whole image.  We have used this pipeline specifically for the analysis of images of intraoperative fluorescein perfusion of brain tumors from the HD camera (1080p) on an OPMI PENTERO 900 (Zeiss) with a yellow 560 filter, and quantification of biopsies within those illuminated fields.
 
